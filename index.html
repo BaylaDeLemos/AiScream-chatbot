@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiScream Chatbot</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            background: url("aiscream.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        df-messenger {
+            position: fixed;
+            bottom: 0;
+            right: 19%;
+            transform: translateX(-50%);
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="AiScReam" agent-id="35faddef-5d72-4cc2-b99b-ab1547bd3aa6"
+        language-code="en"></df-messenger>
+</body>
+
+</html> 
